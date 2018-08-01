@@ -1,0 +1,381 @@
+.my-logo {
+  width: 50px;
+}
+
+.my-logo-text {
+  margin-top: 18px;
+}
+
+.my-compani {
+  margin-top: 20px;
+  margin-left: 5px;
+  color: #143770;
+  font-weight: 700;
+}
+
+.content {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.my-form {
+  margin-bottom: 25px;
+}
+
+#raz div {
+  transition: 3s;
+  opacity: 0;
+}
+
+.margin-input {
+  margin-bottom: 15px;
+}
+
+.my_title_text {
+  font-size: 4.3vh;
+  font-weight: bold;
+  color: #000000;
+}
+
+.words {
+  padding-bottom: 50px;
+}
+
+.phone_words {
+  font-size: 13px;
+}
+
+.words > table {
+  width: 100%;
+}
+
+.words table, td, tr {
+  border: 1px solid #d6d6c2;
+}
+
+.my_action_icon > i {
+  padding-right: 30px;
+}
+
+.my_action_icon > i:hover {
+  cursor: pointer;
+}
+
+#my_cursor_pointer {
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.phrases-bottum_border {
+  border-bottom: 2px #000000 solid;
+}
+
+/*RADIO BUTTON*/
+/* Customize the label (the container) */
+/* The container */
+.radio_container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radio_container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.radio_container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio_container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio_container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+/*END RADIO BUTTON*/
+
+/*SEARCH FORM*/
+* {
+  box-sizing: border-box;
+}
+
+.my_search_form {
+  margin-bottom: 50px;
+}
+
+/* Style the search field */
+form.my_search_form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.my_search_form button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.my_search_form button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.my_search_form::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*END SEARCH FORM*/
+
+/*SELECT READ WORD*/
+.TriSea-technologies-Switch > input[type="checkbox"] {
+    display: none;   
+}
+
+.TriSea-technologies-Switch > label {
+    cursor: pointer;
+    height: 0px;
+    position: relative; 
+    width: 40px;  
+}
+
+.TriSea-technologies-Switch > label::before {
+    background: rgb(0, 0, 0);
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    content: '';
+    height: 16px;
+    margin-top: -8px;
+    position:absolute;
+    opacity: 0.3;
+    transition: all 0.4s ease-in-out;
+    width: 40px;
+}
+.TriSea-technologies-Switch > label::after {
+    background: rgb(255, 255, 255);
+    border-radius: 16px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    content: '';
+    height: 24px;
+    left: -4px;
+    margin-top: -8px;
+    position: absolute;
+    top: -4px;
+    transition: all 0.3s ease-in-out;
+    width: 24px;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::before {
+    background: inherit;
+    opacity: 0.5;
+}
+.TriSea-technologies-Switch > input[type="checkbox"]:checked + label::after {
+    background: inherit;
+    left: 20px;
+}
+/*END SELECT READ WORD*/
+
+#main-slider {
+  overflow: hidden;
+}
+#main-slider .item {
+  height: 558px;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+#main-slider .slider-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+}
+#main-slider .slider-inner h2 {
+  margin-top: 180px;
+  font-size: 36px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #fff;
+}
+#main-slider .slider-inner h2 > span {
+  color: #45aed6;
+}
+#main-slider .slider-inner .btn {
+  margin-top: 10px;
+}
+#main-slider .owl-prev,
+#main-slider .owl-next {
+  position: absolute;
+  top: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 30px;
+  display: inline-block;
+  margin-top: -35px;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 100px;
+  z-index: 5;
+  -webkit-transition: background-color 400ms;
+  transition: background-color 400ms;
+}
+#main-slider .owl-prev:hover,
+#main-slider .owl-next:hover {
+  background-color: #45aed6;
+}
+#main-slider .owl-prev {
+  left: -35px;
+  text-indent: 14px;
+}
+#main-slider .owl-next {
+  right: -35px;
+  text-indent: -14px;
+}
+
+@media (max-width: 800px) {
+  #main-slider {
+    overflow: hidden;
+  }
+  #main-slider .item {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  #main-slider .slider-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    color: #fff;
+  }
+  #main-slider .slider-inner h2 {
+    margin-top: 10%;
+    font-size: 32px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  #main-slider .slider-inner h2 > span {
+    color: #45aed6;
+  }
+  #main-slider .slider-inner .btn {
+    margin-top: 10px;
+  }
+  #main-slider .owl-prev,
+  #main-slider .owl-next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 26px;
+    display: inline-block;
+    margin-top: -35px;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 100px;
+    z-index: 5;
+    -webkit-transition: background-color 400ms;
+    transition: background-color 400ms;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  #main-slider .item {
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+  }
+  #main-slider .slider-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 220px;
+    color: #fff;
+  }
+
+  #main-slider .slider-inner h2 {
+    margin-top: 5%;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .slider-inner p {
+    line-height: 1;
+  } 
+
+}
+
+@media (max-width: 390px) {
+
+  .my-logo-text {
+    font-size: 80%;
+  }
+
+}
